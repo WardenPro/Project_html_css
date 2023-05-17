@@ -1,0 +1,161 @@
+* {
+    font-family: 'GT-Sectra-Fine-Medium',serif;
+    font-weight: normal;
+    color: white;
+}
+
+body {
+    margin: 0 auto;
+    background-color: rgb(27, 29, 30);
+}
+
+header {
+    opacity: 80%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-bottom: 2px solid rgba(127,27,29,0.75);
+}
+
+header img {
+    margin-top: 15px;
+    width: 90px;
+}
+
+@media screen and (max-width: 750px)
+{
+    nav.nav-desktop {
+        display: none;
+    }
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav > ul > li {
+    float: left;
+    position: relative;
+    font-size: 20px;
+}
+
+nav > ul > li a {
+    padding: 1.6rem 1.6rem;
+    margin-left: 0;
+}
+
+.sous-menu {
+    background-color: black;
+    display: none;
+}
+
+nav li:hover .sous-menu {
+    display: inline-block;
+    position: absolute;
+    top: 90%;
+    left: 10px;
+    padding: 0;
+    z-index: 1000;
+}
+
+.sous-menu li {
+    text-align: center;
+    border-bottom: 2px solid rgba(127,27,29,0.75);
+    border-left: 2px solid rgba(127,27,29,0.75);
+    border-right: 2px solid rgba(127,27,29,0.75);
+}
+
+.sous-menu li a {
+    text-align: center;
+    font-size: 13px;
+    width: auto;
+}
+
+.contact {
+    margin-left: auto;
+    background: rgba(127,27,29,0.75);
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    z-index: 2;
+    padding: 1.666rem 4rem 1.666rem 4rem;
+    right: 0px;
+    height: 6px;
+}
+
+.home_video video {
+    padding: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 750px)
+{
+
+    nav.nav-phone {
+        display: none;
+    }
+}
+
+nav.nav-mobile .menuicon {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'GT-Sectra-Fine-Medium',serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 36px;
+    margin-left: 2rem;
+}
+
+nav.nav-mobile .nav-overlay {
+    border-top-color: rgba(57, 62, 64, 0.05);
+}
+
+nav.nav-mobile .nav-overlay {
+    display: none;
+    grid-column: 1/4;
+    border-top: 1px solid rgba(218,226,228,0.05);
+    margin-top: 0;
+}
+
+nav.nav-mobile .nav-overlay ul.menu {
+    display: block;
+    width: 100%;
+}
+
+nav.nav-phone {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 1.4rem 0;
+    letter-spacing: .4rem;
+    position: relative;
+    padding-left: 5px;
+    margin-left: 2rem;
+}
+
+nav.nav-phone .nav-overlay.is-visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}

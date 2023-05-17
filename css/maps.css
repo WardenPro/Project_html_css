@@ -1,0 +1,17 @@
+#map1 {
+    background-image: url(../sources/Map1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#map2 {
+    background-image: url(../sources/Map2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#map3 {
+    background-image: url(../sources/Map3.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
